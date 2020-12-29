@@ -9,12 +9,12 @@
     <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
-    <form id="sizePicker" onsubmit="change()">
+    <form id="sizePicker">
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1">
         Grid Width:
         <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit">
+        <input type="submit" id="submitButton" onclick="clear">
     </form>
 
     <h2>Pick A Color</h2>
@@ -22,15 +22,17 @@
 
     <h2>Design Canvas</h2>
 
-    <div id="container">
-      <div class="grid"></div>
+    <!-- <table id="pixelCanvas">
+        <tr>
+          <td></td>
+        <tr>
+    </table> -->
 
-    </div>
+    <div id='container'>blank</div>
 
+    <script src="designs.js">
 
-    <table id="pixelCanvas"></table>
-
-    <script src="designs.js"></script>
+    </script>
 
 
 
